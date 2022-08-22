@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    color: var(--darkFont);
+    transition: all 0.5s;
+    font-family: arial;
+    --darkFont: #ffffff;
+    --darkFont2: #a4a6aa;
+    --darkBg: #37393e;
+    --lightdarkBg: #42464ce4;
+    --focusDarkBg: #33353a;
+    --embedDarkBg: #2f3136;
+    --successBtnBg: #447b4b;
+    --focusSuccessBtnBg: #315a36;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-weight: 100;
+    background: radial-gradient(#399ba2,#1f1013);
+}
+
+.unselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container>.background_img {
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.container>.logo_img {
+    height: 180px;
+    position: fixed;
+    top: 16%;
+    border-radius: 50%;
+    border: 3px solid #00000071;
+}
+
+.grayBg {
+    width: 100%;
+    line-height: 1.5;
+    height: fit-content;
+    padding: 20px;
+    font-size: 18px;
+    overflow: hidden;
+    background-color: var(--lightdarkBg);
+}
+
+.grayBg>li {
+    margin: 7px 0 0 0;
+}
+
+li.checkmark {
+    list-style: none;
+    background: url(../icons/checkmark.svg) no-repeat 0 28%;
+    padding: 24px;
+}
+
+.container>.btnMenu {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin: 0 5px 5px 5px;
+    border: 5px solid var(--lightdarkBg);
+    border-radius: 0 0 10px 10px;
+    background-color: #4f5256dd;
+}
+
+.container>.btnMenu>button {
+    width: 100%;
+    height: 80%;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 7px 5px 5px 5px;
+    background-color: var(--successBtnBg);
+}
+
+.container>.btnMenu>button:hover {
+    background-color: var(--focusSuccessBtnBg);
+    transition: 0.5s;
+}
+
+.bottom-menu {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #42464c48;
+}
+
+ul.authors {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    position: absolute;
+    bottom: 12px;
+}
+
+ul.authors>li {
+    margin: 12px 0 0 0;
+    font-size: 14px;
+    list-style: none;
+    background: url(../icons/cross.svg) no-repeat 5%;
+    padding-left: 24px;
+}
+
