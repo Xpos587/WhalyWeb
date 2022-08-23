@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scable=no" />
     <link rel="icon" href="./assets/icons/icon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -13,8 +13,11 @@
 
 <body>
     <div class="container vignette unselect">
-        <img class="background_img unselect" src="./assets/images/dolphin480.png" draggable="false" alt />
-        <img class="logo_img unselect" src="./assets/images/dolphin.png" draggable="false" alt />
+        <div class="background">
+            <div class="blur">
+                <img class="logo unselect" src="./assets/images/dolphin.png" draggable="false" alt />
+            </div>
+        </div>
         <div class="grayBg">
             <ul>
                 <li class="checkmark">
@@ -28,17 +31,18 @@
             </ul>
         </div>
         <div class="btnMenu">
-            <button class="unselect" onclick="document.location='https://discord.gg/SVkMXDKEF5'">Присоединиться</button>
+            <button class="unselect" onclick="document.location='https://discord.gg/afPsFkm7V7'">Присоединиться</button>
             <button class="unselect" onclick="document.location='https://discord.com/api/oauth2/authorize?client_id=958474950371590145&permissions=8&scope=bot%20applications.commands'">Пригласить бота</button>
         </div>
     </div>
 
-    <div class="bottom-menu">
+    <!-- <div class="bottom-menu">
         <strong>Авторы:</strong>
         <ul class="authors">
             <li>sourlemonadde#4006</li>
             <li>Xpos#6749</li>
         </ul>
+    </div> -->
 
 
 </body>
